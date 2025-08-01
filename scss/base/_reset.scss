@@ -1,0 +1,77 @@
+@use '../abstracts/color' as *;
+@use '../abstracts/variable' as *;
+@use '../abstracts/mixins' as *;
+
+.folin-landing-main {
+    font-family: $primaryFont;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: $bodyColor;
+    font-size: 14px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0;
+    }
+    
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    input {
+        @include placeholder(#afafaf);
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    input,
+    button {
+        font-family: $primaryFont;
+    }
+
+    .flex-center-between {
+        @include flex-center-between;
+    }
+
+    .container {
+        max-width: 100%;
+        @include breakpoint(mn576) {
+            max-width: 90%;
+        }
+        @include breakpoint(mn1400) {
+            max-width: 85%;
+        }
+        @include breakpoint(mn1600) {
+            max-width: 75%;
+        }
+    }
+    .text-violet {
+        color: rgb($secondaryColor2) !important;
+    }
+}

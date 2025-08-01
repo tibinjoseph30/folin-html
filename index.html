@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Folio-folin</title>
+    <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/style-folin-v3.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="folin-landing-main">
+        <header class="app-header">
+            <div class="container">
+                <nav class="app-navbar d-flex align-items-center justify-content-md-between">
+                    <div class="app-brand">
+                        <a href="#">
+                            <img src="media/logo-default.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="search-block ms-md-0 ms-auto">
+                        <div class="search-bar d-flex align-items-center">
+                            <span class="svg-icon d-md-none" onclick="searchToggle()">
+                                <svg width="21" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                                </svg>
+                            </span>
+                            <input type="text" class="typing-input" placeholder="">
+                            <button>
+                                <svg width="21" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="button-search d-md-none me-4" onclick="searchToggle()">
+                            <svg width="21" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nav-block">
+                        <div class="button-block text-center">
+                            <div class="fw-medium mb-1">Register as Influencer</div>
+                            <button class="button button-primary-gradient flex-center-between">Register
+                                <span class="svg-icon ms-3">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </span></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="app-section section-home">
+                <div class="container">
+                    <h1 class="fw-bold display-3 mb-5">Discover, Connect,<br>Collaborate:</h1>
+                </div>
+                <div class="swiper influencers-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="slide-item">
+                                <img src="media/influencers/001.png" alt="">
+                                <div class="slide-content">
+                                    <div class="contents">
+                                        <div class="mb-1">Followers 300k</div>
+                                        <h4 class="fw-bold">Fashion Queen</h4>
+                                        <div class="d-flex align-items-center gap-2 mt-3">
+                                            <span class="svg-icon">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+                                                    <path
+                                                        d="M1.33398 9.33317L0.333984 8.33317L5.33398 3.33317L8.00065 5.99984L12.734 0.666504L13.6673 1.59984L8.00065 7.99984L5.33398 5.33317L1.33398 9.33317Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <span class="eng-rate">Engagement rate 15%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="button rounded-pill">View more</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-item">
+                                <img src="media/influencers/002.png" alt="">
+                                <div class="slide-content">
+                                    <div class="contents">
+                                        <div class="mb-1">Followers 300k</div>
+                                        <h4 class="fw-bold">Fashion Queen</h4>
+                                        <div class="d-flex align-items-center gap-2 mt-3">
+                                            <span class="svg-icon">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+                                                    <path
+                                                        d="M1.33398 9.33317L0.333984 8.33317L5.33398 3.33317L8.00065 5.99984L12.734 0.666504L13.6673 1.59984L8.00065 7.99984L5.33398 5.33317L1.33398 9.33317Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <span class="eng-rate">Engagement rate 15%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="button rounded-pill">View more</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-item">
+                                <img src="media/influencers/003.png" alt="">
+                                <div class="slide-content">
+                                    <div class="contents">
+                                        <div class="mb-1">Followers 300k</div>
+                                        <h4 class="fw-bold">Fashion Queen</h4>
+                                        <div class="d-flex align-items-center gap-2 mt-3">
+                                            <span class="svg-icon">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+                                                    <path
+                                                        d="M1.33398 9.33317L0.333984 8.33317L5.33398 3.33317L8.00065 5.99984L12.734 0.666504L13.6673 1.59984L8.00065 7.99984L5.33398 5.33317L1.33398 9.33317Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <span class="eng-rate">Engagement rate 15%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="button rounded-pill">View more</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-item">
+                                <img src="media/influencers/001.png" alt="">
+                                <div class="slide-content">
+                                    <div class="contents">
+                                        <div class="mb-1">Followers 300k</div>
+                                        <h4 class="fw-bold">Fashion Queen</h4>
+                                        <div class="d-flex align-items-center gap-2 mt-3">
+                                            <span class="svg-icon">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+                                                    <path
+                                                        d="M1.33398 9.33317L0.333984 8.33317L5.33398 3.33317L8.00065 5.99984L12.734 0.666504L13.6673 1.59984L8.00065 7.99984L5.33398 5.33317L1.33398 9.33317Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <span class="eng-rate">Engagement rate 15%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="button rounded-pill">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="container mt-5">
+                    <button class="button rounded-4 btn-large border-2 button-outline hover-slide-fill-right"><span>View
+                            all influencers</span>
+                        <span class="svg-icon ms-3">
+                            <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </section>
+            <section class="app-section section-features">
+                <div class="container">
+                    <h2 class="section-title fw-bold display-4">Discover, Connect, <span
+                            class="text-violet">Collaborate</span>:<br>Effortlessly Engage with
+                        Top<br>Influencers Worldwide!</h2>
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-md-6">
+                            <ul class="features-list d-flex flex-column gap-4">
+                                <li class="d-flex align-items-baseline gap-3">
+                                    <div>
+                                        <h5>1.</h5>
+                                    </div>
+                                    <div class="contents pb-4">
+                                        <h5 class="mb-3 fw-bold">Find your perfect influencers!</h5>
+                                        <p>Invite creators to work directly with your brand at scale from the world's
+                                            most comprehensive database.</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-baseline gap-3">
+                                    <div>
+                                        <h5>2.</h5>
+                                    </div>
+                                    <div class="contents pb-4">
+                                        <h5 class="mb-3 fw-bold">Engage and Communicate</h5>
+                                        <p>Use Lolly CRM to communicate with your creators using full automation to
+                                            eliminate that manual work.</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-baseline gap-3">
+                                    <div>
+                                        <h5>3.</h5>
+                                    </div>
+                                    <div class="contents pb-4">
+                                        <h5 class="mb-3 fw-bold">Manage Campaigns</h5>
+                                        <p>Centralise all your campaign management and reporting in one solution.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="button rounded-4 btn-large button-primary-gradient mt-5">Contact Us</button>
+                        </div>
+                        <div class="col-xl-5 col-md-6 offset-xl-2 d-md-block d-none">
+                            <div class="canvas">
+                                <div class="screen">
+                                    <img src="media/assets/features-01.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="app-section section-story">
+                <div class="container">
+                    <div class="story-card-container flex-sm-row flex-column">
+                        <div class="story-card d-flex flex-fill">
+                            <img src="media/assets/story-01.png" alt="">
+                            <div class="contents d-flex flex-column align-items-start justify-content-between">
+                                <h2>Mama Earth: success story through micro influencers</h2>
+                                <button class="button d-flex align-items-center gap-2 rounded-pill">Read more
+                                    <span class="svg-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="story-card d-flex flex-fill">
+                            <img src="media/assets/story-01.png" alt="">
+                            <div class="contents d-flex flex-column align-items-start justify-content-between">
+                                <h2>Mama Earth: success story through micro influencers</h2>
+                                <button class="button d-flex align-items-center gap-2 rounded-pill">Read more
+                                    <span class="svg-icon">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="app-section section-testimonials pt-0">
+                <div class="container">
+                    <h1 class="fw-bold display-5 mb-5">What others are saying</h1>
+                    <div class="swiper testimonials-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-item">
+                                    <div class="symbol symbol-circle symbol-70">
+                                        <img src="media/avatars/100-1.jpg" alt="">
+                                    </div>
+                                    <p><q>Lolly revolutionized our influencer marketing game! From finding the perfect
+                                            influencers to streamlined communication and centralized campaign
+                                            management, they're the ultimate partner for brand success.</q></p>
+                                    <h6>Head of Marketing, Meriiboy Ice Cream</h6>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-item">
+                                    <div class="symbol symbol-circle symbol-70">
+                                        <img src="media/avatars/100-2.jpg" alt="">
+                                    </div>
+                                    <p><q>Lolly revolutionized our influencer marketing game! From finding the perfect
+                                            influencers to streamlined communication and centralized campaign
+                                            management, they're the ultimate partner for brand success.</q></p>
+                                    <h6>Head of Marketing, Meriiboy Ice Cream</h6>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-item">
+                                    <div class="symbol symbol-circle symbol-70">
+                                        <img src="media/avatars/100-3.jpg" alt="">
+                                    </div>
+                                    <p><q>Lolly revolutionized our influencer marketing game! From finding the perfect
+                                            influencers to streamlined communication and centralized campaign
+                                            management, they're the ultimate partner for brand success.</q></p>
+                                    <h6>Head of Marketing, Meriiboy Ice Cream</h6>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-item">
+                                    <div class="symbol symbol-circle symbol-70">
+                                        <img src="media/avatars/100-4.jpg" alt="">
+                                    </div>
+                                    <p><q>Lolly revolutionized our influencer marketing game! From finding the perfect
+                                            influencers to streamlined communication and centralized campaign
+                                            management, they're the ultimate partner for brand success.</q></p>
+                                    <h6>Head of Marketing, Meriiboy Ice Cream</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="app-section section-brands">
+                <div class="container">
+                    <h1 class="fw-bold display-5 mb-5 d-lg-block d-none">Popular brands doing influencer<br>marketing
+                    </h1>
+                    <h1 class="fw-bold display-5 mb-5 d-lg-none">Popular brands doing influencer marketing</h1>
+                    <div class="swiper brands-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-item">
+                                    <img src="media/brands/brand-01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-item">
+                                    <img src="media/brands/brand-02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-item">
+                                    <img src="media/brands/brand-03.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-item">
+                                    <img src="media/brands/brand-04.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-item">
+                                    <img src="media/brands/brand-05.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="app-footer">
+            <div class="container">
+                <div class="footer-nav-group">
+                    <div class="flex-fill">
+                        <h5>Platform</h5>
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#">Influencer Analytics</a>
+                            </li>
+                            <li>
+                                <a href="#">Influencer Discovery</a>
+                            </li>
+                            <li>
+                                <a href="#">Campaign Management</a>
+                            </li>
+                            <li>
+                                <a href="#">Market Analysis</a>
+                            </li>
+                            <li>
+                                <a href="#">Professional services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-fill">
+                        <h5>Company</h5>
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Press</a>
+                            </li>
+                            <li>
+                                <a href="#">Customers</a>
+                            </li>
+                            <li>
+                                <a href="#">Affiliate</a>
+                            </li>
+                            <li>
+                                <a href="#">Become a partner</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-fill">
+                        <h5>Resources</h5>
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Free tools</a>
+                            </li>
+                            <li>
+                                <a href="#">Customer stories</a>
+                            </li>
+                            <li>
+                                <a href="#">BHypeAuditor academy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-fill">
+                        <h5>Get started</h5>
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Request a demo</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                            <li>
+                                <a href="#">Migrate HypeAuditor</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-fill">
+                        <h5>Need more info ?</h5>
+                        <button class="button button-dark rounded-pill btn-small">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="js/style-folin-v3.js"></script>
+</body>
+
+</html>

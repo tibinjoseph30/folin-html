@@ -1,0 +1,48 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variable' as *;
+@use '../abstracts/color' as *;
+
+.folin-landing-main {
+    .app-footer {
+        padding: 40px 0;
+        @include breakpoint(mn576) {
+            padding: 60px 0;
+        }
+        @include breakpoint(mn768) {
+            padding: 80px 0;
+        }
+        @include breakpoint(mn992) {
+            padding: 100px 0;
+        }
+        .footer-nav-group {
+            @include gridbox;
+            gap: 20px;
+            @include grid-template-columns(repeat(2, minmax(0, 1fr)));
+            @include breakpoint(mn768) {
+                @include grid-template-columns(repeat(3, minmax(0, 1fr)));
+            }
+            @include breakpoint(mn992) {
+                @include flexbox;
+            }
+            h5 {
+                font-weight: 700;
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+            .nav-list {
+                @include flexbox;
+                @include flex-direction(column);
+                gap: 5px;
+                li {
+                    a {
+                        display: block;
+                        font-size: 16px;
+                        &:hover {
+                            color: rgb($primaryColor2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
